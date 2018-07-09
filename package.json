@@ -1,0 +1,37 @@
+{
+  "name": "autoloader_cdn",
+  "version": "1.0.0",
+  "description": "CDN autoloader based on package.json dependencies and unpkg.com(cdn service)",
+  "main": "dist/autoloader_cdn.js",
+  "scripts": {
+    "build": "NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geoshar/autoloader_cdn.git"
+  },
+  "keywords": [
+    "autoloader-cdn",
+    "cdn",
+    "autoload",
+    "webpack",
+    "tag",
+    "script",
+    "unpkg"
+  ],
+  "author": "Georgy Sharapov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geoshar/autoloader_cdn/issues"
+  },
+  "homepage": "https://github.com/geoshar/autoloader_cdn#readme",
+  "dependencies": {
+    "loadjs": "^3.5.4"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.15.1",
+    "webpack-command": "^0.4.1"
+  }
+}
