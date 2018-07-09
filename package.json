@@ -1,15 +1,15 @@
 {
-  "name": "autoloader_cdn",
+  "name": "autoloader-cdn",
   "version": "1.0.1",
   "description": "CDN autoloader based on package.json dependencies and unpkg.com(cdn service)",
-  "main": "dist/autoloader_cdn.js",
+  "main": "dist/autoloader.cdn.js",
   "scripts": {
     "dev": "NODE_ENV=development webpack --watch",
     "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geoshar/autoloader_cdn.git"
+    "url": "git+https://github.com/geoshar/autoloader-cdn.git"
   },
   "keywords": [
     "autoloader-cdn",
@@ -23,9 +23,9 @@
   "author": "Georgy Sharapov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geoshar/autoloader_cdn/issues"
+    "url": "https://github.com/geoshar/autoloader-cdn/issues"
   },
-  "homepage": "https://github.com/geoshar/autoloader_cdn#readme",
+  "homepage": "https://github.com/geoshar/autoloader-cdn#readme",
   "dependencies": {
     "loadjs": "^3.5.4"
   },

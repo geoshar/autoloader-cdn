@@ -6,13 +6,13 @@ module.exports = {
     mode: env,
     devtool: (env === "production") ? 'source-map' : 'inline-source-map',
     entry: {
-        autoloader_cdn: './src/autoloader_cdn.js',
-        "autoloader_cdn.min": './src/autoloader_cdn.js'
+        "autoloader.cdn": './src/autoloader.cdn.js',
+        "autoloader.cdn.min": './src/autoloader.cdn.js'
     },
     output: {
       path: path.resolve(__dirname, './dist'),
       filename: '[name].js',
-        library: "[name]",
+        library: "autoloaderCdn",
         libraryTarget: "umd",
         umdNamedDefine: true
     },

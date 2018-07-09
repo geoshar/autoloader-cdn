@@ -2,7 +2,7 @@
 
 Useful when you needed to load everything from one file,
 for example a library with tons of dependencies,
-you won't bundle everything, just create `autoloader.js` file in your project.
+you won't bundle everything, just create 5kb `autoloader.js` file in your project.
 ## Install
 
 You can install this package with `npm`.
@@ -10,24 +10,24 @@ You can install this package with `npm`.
 ### npm
 
 ```shell
-npm install --save autoloader_cdn
+npm install --save autoloader-cdn
 ```
 
 ### CDN
 
-Can also be found on [unpkg.com](https://cdnjs.com/libraries/nestable2):
+Can also be found on [unpkg.com](https://unpkg.com/autoloader-cdn):
 
 ```
-//unpkg.com/cdn-autoloader@1.0.0/dist/autoloader_cdn.js
-//unpkg.com/cdn-autoloader@1.0.0/dist/autoloader_cdn.min.js
+//unpkg.com/autoloader-cdn@1.0.2/dist/autoloader.cdn.js
+//unpkg.com/autoloader-cdn@1.0.2/dist/autoloader.cdn.min.js
 ```
 
 ## Basic usage example
 ##### 1. Add a `<script>` tag to your `index.html`
 ```html
-    <script src="../dist/autoloader_cdn.js"></script>
+    <script src="../dist/autoloader.cdn.js"></script>
     <script type="text/javascript">
-         var autoloader = autoloader_cdn({
+         var autoloader = autoloaderCdn({
              env: 'development',
              deps: true,
              pkgDependencies: {
@@ -76,9 +76,9 @@ A recommended way is to use js precompilers,
 // provide the path to package.json, or use webpack DefinePlugin insead.
 var pkg = require('./package'); 
 // require the library
-var autoloader_cdn = require('autoloader_cdn');
+var autoloaderCdn = require('autoloader-cdn');
 // library initialization
-var autoloader = autoloader_cdn({
+var autoloader = autoloaderCdn({
              env: 'development',
              pkgDependencies: pkg.dependencies,
              loadDependencies: {
