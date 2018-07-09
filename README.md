@@ -80,7 +80,6 @@ var autoloader_cdn = require('autoloader_cdn');
 // library initialization
 var autoloader = autoloader_cdn({
              env: 'development',
-             deps: true,
              pkgDependencies: pkg.dependencies,
              loadDependencies: {
                  "jquery": {
@@ -95,9 +94,9 @@ var autoloader = autoloader_cdn({
 // export
 module.exports = autoloader.loadjs;
 ```
-Create an `UMD` library from this piece of code, for example with `webpack`, library named `autoloader`, also it's recommended to use `webpack.DefinePlugin`, to send special values from `package.json`.
+Create `UMD` library from this file, for example with `webpack` name the library `autoloader`, also it's recommended to use `webpack.DefinePlugin`, to set only dependencies from `package.json`.
 
-#### 2. After all add two `<script>` tags to your `index.html` 
+#### 2. After all, it would look like this: 
 ```html
 <script src="autoloader.js"
             deps="true"
