@@ -2,7 +2,7 @@
 
 Useful when you needed to load everything from one file,
 for example a library with tons of dependencies,
-you won't bundle everything, just create separated `autoloader.js` file to your project.
+you won't bundle everything, just create `autoloader.js` file in your project.
 ## Install
 
 You can install this package with `npm`.
@@ -10,7 +10,7 @@ You can install this package with `npm`.
 ### npm
 
 ```shell
-npm install --save cdn-autoloader
+npm install --save autoloader_cdn
 ```
 
 ### CDN
