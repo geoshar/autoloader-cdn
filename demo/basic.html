@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="../dist/autoloader_cdn.js"></script>
+    <script type="text/javascript">
+         var autoloader = autoloader_cdn({
+             env: 'development',
+             deps: true,
+             pkgDependencies: {
+                 "jquery": "^1.8.2"
+             },
+             loadDependencies: {
+                 "jquery": {
+                     version: "3.3.1"
+                 },
+                 "video.js": {
+                     fileName: 'video',
+                     version: "7.0.5"
+                 }
+             }
+         });
+        autoloader.loadjs.ready('bundle', function() {
+            $('body').html('Jquery works!!');
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

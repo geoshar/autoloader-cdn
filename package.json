@@ -1,9 +1,10 @@
 {
   "name": "autoloader_cdn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CDN autoloader based on package.json dependencies and unpkg.com(cdn service)",
   "main": "dist/autoloader_cdn.js",
   "scripts": {
+    "dev": "NODE_ENV=development webpack --watch",
     "build": "NODE_ENV=production webpack"
   },
   "repository": {

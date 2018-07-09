@@ -11,7 +11,10 @@ module.exports = {
     },
     output: {
       path: path.resolve(__dirname, './dist'),
-      filename: '[name].js'
+      filename: '[name].js',
+        library: "[name]",
+        libraryTarget: "umd",
+        umdNamedDefine: true
     },
     plugins: [new CleanWebpackPlugin('dist')],
     optimization: {

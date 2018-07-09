@@ -1,4 +1,4 @@
-let autoloader_cdn = function (optionsExternal) {
+module.exports = function (optionsExternal) {
 
     let options = Object.assign({
         env: 'production',
@@ -95,7 +95,3 @@ let autoloader_cdn = function (optionsExternal) {
     }
     return options;
 };
-if(autoloader_cdn_options){
-   autoloader_cdn = autoloader_cdn(autoloader_cdn_options);
-}
-module.exports = autoloader_cdn;
