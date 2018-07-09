@@ -23,7 +23,7 @@ Can also be found on [unpkg.com](https://cdnjs.com/libraries/nestable2):
 ```
 
 ## Basic usage example
-#####1. Add a `<script>` tag to your `index.html`
+##### 1. Add a `<script>` tag to your `index.html`
 ```html
 <script>
 window.autoloader_cdn_options = {
@@ -65,7 +65,7 @@ Available options here
 }
 ``` 
 * `urlTemplate` The url structure (default: `https://unpkg.com/[pkgName]@[version][path][fileName][fileMin][fileExt]`), unrecommended to change.
-#####2. Add another `<script>` tag to your `index.html`:
+##### 2. Add another `<script>` tag to your `index.html`:
 
 ```html
   <script src="autoloader_cdn.js"
@@ -81,7 +81,7 @@ Available options here:
 * `deps-before` what to include before all dependencies added (sepparated by comma `,`, ex: `https://code.jquery.com/jquery-2.2.4.min.js,https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js`)
 * `deps-after` the same like `deps-before` but the opposite .
 
-#####3. Add last one `<script>` tag to your `index.html`:
+##### 3. Add last one `<script>` tag to your `index.html`:
 ```html
 autoloader.loadjs.ready('bundle', function() {
         $('body').html('Jquery works!!');
@@ -96,7 +96,7 @@ A recommended way is to use js precompilers,
  so in this case the dependencies versions will be parsed from package.json.
  include it to `pkgDependencies` parameter.
 
-#####1.  Add to your code 
+##### 1.  Add to your code 
 ```js 
 var pkg = require('./package'); 
 var autoloader_cdn = require('autoloader_cdn');
