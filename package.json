@@ -1,6 +1,6 @@
 {
   "name": "autoloader-cdn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CDN autoloader based on package.json dependencies and unpkg.com(cdn service)",
   "main": "dist/autoloader.cdn.js",
   "scripts": {
